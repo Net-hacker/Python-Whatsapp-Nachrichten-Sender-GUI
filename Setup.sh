@@ -4,4 +4,4 @@ pip install tkinter
 clear
 pip install keyboard
 clear
-echo "Done!"
+echo "Script Made by Juri-Zockt!"
