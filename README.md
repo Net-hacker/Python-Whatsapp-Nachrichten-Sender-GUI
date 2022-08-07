@@ -10,9 +10,13 @@ Es ist ein Nachrichten Sender der PyWhatkit und tkinter benutzt um ein GUI Whats
 ## Installation auf Windows
 ```
 > Setup.bat
+> python Nachrichten_Sender_GUI.py
+> Deine Vorwahl: //Hier die Vorwahl eingeben
 ```
 
 ## Installation auf Linux
 ```
 $ ./Setup.sh
+$ python Nachrichten_Sender_GUI.py
+$ Deine Vorwahl: //Hier die Vorwahl eingeben
 ```
