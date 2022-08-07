@@ -96,4 +96,5 @@ b4.place(x=400, y=130)
 b5 = Button(window, text='Senden', command=Sender, width=10, bg='#777777')
 b5.place(x=250, y=200)
 
+print("Script Made by Juri-Zockt")
 FirstUse()
