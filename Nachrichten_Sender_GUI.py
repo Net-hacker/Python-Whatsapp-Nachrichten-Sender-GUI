@@ -11,10 +11,25 @@ Nummer: str
 Nachricht: str
 hr: int
 mint: int
+Vor: str
 
 
 if os.path.exists('pywhatkit_dbs.txt'):
 	os.remove('pywhatkit_dbs.txt')
+
+def FirstUse():
+	global Vor
+	if os.path.exists('Prefix.txt'):
+		with open('Prefix.txt', 'r') as o:
+			Vor = o.read()
+			o.close()
+	else:
+		Vor = input("Deine Vorwahl: ")
+		with open('Prefix.txt', 'w') as w:
+			w.write(Vor)
+	os.system('cls')
+	window.mainloop()
+
 
 def LockNum():
 	global Nummer
@@ -38,8 +53,9 @@ def Sender():
 	global hr
 	global mint
 	window.destroy()
-	pywhatkit.sendwhatmsg('+49' + Nummer, Nachricht, hr, mint)
-	
+	pywhatkit.sendwhatmsg(Vor + Nummer, Nachricht, hr, mint)
+	sys.exit()
+
 	if os.path.exists('pywhatkit_dbs.txt'):
 		os.remove('pywhatkit_dbs.txt')
 
@@ -80,4 +96,4 @@ b4.place(x=400, y=130)
 b5 = Button(window, text='Senden', command=Sender, width=10, bg='#777777')
 b5.place(x=250, y=200)
 
-window.mainloop()
+FirstUse()
