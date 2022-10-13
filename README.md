@@ -7,7 +7,7 @@ Es ist ein Nachrichten Sender der PyWhatkit und tkinter benutzt um ein GUI Whats
 ## Was braucht man dafür
 - Python 3.6 oder höher
 
-##Tipp
+## Tipp
 Schreib deine Vorwahl wenn du die .exe nutzt direkt in die Prefix.txt wie z.B.
 +49
 
