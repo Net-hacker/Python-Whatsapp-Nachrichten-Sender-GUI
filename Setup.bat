@@ -1,7 +1,5 @@
 pip install pywhatkit
 cls
-pip install tkinter
-cls
-pip install keyboard
+pip install PySimpleGUI
 cls
 echo "Script Made by Juri-Zockt!"
