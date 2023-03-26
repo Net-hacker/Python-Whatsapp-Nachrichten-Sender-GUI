@@ -1,7 +1,5 @@
-pip install pywhatkit
+pip3 install pywhatkit
 clear
-pip install tkinter
-clear
-pip install keyboard
+pip3 install PySimpleGUI
 clear
 echo "Script Made by Juri-Zockt!"
